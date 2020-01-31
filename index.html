@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DSC106 HW2</title>
+        <meta name="Dingus & Widget Global Dashboard" content="Global Dashboard">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+        <script src="./resources/scripts/hw2.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <figure id="logo"><img src="./resources/images/dw-logo.png" alt="logo of D & W"></figure>
+            <h1 id="hhh">Global Dashboard</h1>
+        </header>
+        <main>
+            <section>
+                <div class="Part" id = "num">
+                    <div class="p1title" id="d_num">
+                        <h3>Dingus</h3>
+                        <br>
+                        <p class="num_text" id="d_num_text">0</p>
+                    </div>
+                    <div class="p1title" id="w_num">
+                        <h3>Widget</h3>
+                        <br>
+                        <p class="num_text" id ="w_num_text">0</p>
+                    </div>
+                    <div class="p1title" id="s_num">
+                        <h3>Sales</h3>
+                        <br>
+                        <p class="num_text"><span id="dollar_sign">$</span><span id="sum_num_text">0.00</span></p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <div class="order_table">
+                    <table id="o_table">
+                        <caption>Order History</caption>
+                        <colgroup>
+                            <col class="grey_col">
+                            <col class="white_col">
+                            <col class="white_col">
+                            <col class="white_col">
+                            <col class="white_col">
+                        </colgroup>
+                        <thead>
+                            <tr id="col">
+                                <th rowspan="2">ID#</th>
+                                <th rowspan="2">Date</th>
+                                <th colspan="2">Quantity</th>
+                                <th rowspan="2">Total</th>
+                            </tr>
+                            <tr id="sub_col">
+                                <th>Dingus</th>
+                                <th>Widget</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">© 2020 D&W Worldwide</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <details>
+                    <summary><strong>Order Form</strong></summary>
+                    <hr>
+                    <form class = "pure-form">
+                    
+                        <fieldset>
+                            <label for="d_quantity">Dingus</label>
+                            <input class="pure-u-2-24" type="number" id="d_quantity" value="0" min="0">
+                            <label for="d_price">@</label>
+                            <input class="pure-u-4-24" type="text" id="d_price" value="14.25" readonly>
+                            <label for="d_total">= $</label>
+                            <input class="pure-u-4-24" type="text" id="d_total" value="0.00" readonly>
+                            <br>
+                            <br>
+                            <label for="w_quantity">Widget</label>
+                            <input class="pure-u-2-24" type="number" id="w_quantity" value="0" min="0">
+                            <label for="w_price">@</label>
+                            <input class="pure-u-4-24" type="text" id="w_price" value="9.99" readonly>
+                            <label for="w_total">= $</label>
+                            <input class="pure-u-4-24" type="text" id="w_total" value="0.00" readonly>
+                            <br>
+                            <br>
+                            <label for="Total">Total $</label>
+                            <input type="text" id="Total" value="0.00" size="15" readonly>
+                            <br>
+                            <br>
+                            <div class = "pure_button">
+                                <button class="button-error pure-button" type="reset" id="cancel">Cancel</button>
+                                <button class="button-success pure-button" type="submit" onclick="return false;" id="order" disabled>Order</button>
+                            </div>
+                        </fieldset>
+                        <br>
+                    </form>
+                </details>
+            </section>
+        </main>
+    </body>
+</html>

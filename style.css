@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap);
+* {
+  font-family: 'Paytone One';
+  font-family: 'Montserrat';
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  margin: initial;
+  padding: 1% 2%;
+}
+h1 {
+  text-align: left;
+  margin: 10px auto;
+  padding: 5px;
+  font-family: 'Paytone One', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+}
+figure img {
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+  width: 130px;
+  height: 40px;
+}
+h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Paytone One', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+}
+#num {
+  padding-top: 1%;
+}
+.Part {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+.p1title {
+  display: table-cell;
+  margin: auto;
+}
+.num_text {
+  font-size: xx-large;
+  color: blue;
+  margin-top: -2px;
+  margin-bottom: 0px;
+}
+#dollar_sign {
+  color: green;
+}
+.order_table {
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+table, th, td {
+  text-align: center;
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+}
+.grey_col {
+  background-color: #D3D3D3;
+}
+dialog {
+  border:2px solid black;
+}
+fieldset {
+  border: hidden;
+}
+.button-success.pure-button, .button-error.pure-button {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success.pure-button {
+  background: rgb(28, 184, 65);
+}
+.button-error.pure-button {
+  background: rgb(202, 60, 60); 
+}
